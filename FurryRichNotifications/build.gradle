@@ -27,7 +27,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -41,8 +40,8 @@ task exportAAR(type: Copy) {
     outputs.upToDateWhen { return false }
     from('build/outputs/aar/')
     into('release/')
-    include('sdk-release.aar')
-    rename('sdk-release.aar', 'com.gameofwhales.sdk-' + android.defaultConfig.versionName + '.aar')
+    include('FurryRichNotifications-release')
+    rename('FurryRichNotifications-release', 'com.furry.utils.rich-' + android.defaultConfig.versionName + '.aar')
 }
 
 build.finalizedBy exportAAR
