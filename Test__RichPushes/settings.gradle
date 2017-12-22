@@ -1,0 +1,4 @@
+include ':app'
+
+include 'com.furry.utils.rich'
+project(':com.furry.utils.rich').projectDir = new File('../FurryRichNotifications')
