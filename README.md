@@ -1,6 +1,6 @@
 # android.rich.notification
 
-![Example](/rich_example.png)
+![Example](/example.png)
 
 
 # Usage
